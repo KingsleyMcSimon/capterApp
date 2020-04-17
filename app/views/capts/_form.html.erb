@@ -1,0 +1,22 @@
+<%= form_with(model: capt, local: true) do |form| %>
+  <% if capt.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(capt.errors.count, "error") %> prohibited this capt from being saved:</h2>
+
+      <ul>
+        <% capt.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :capt %>
+    <%= form.text_area :capt %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
