@@ -28,6 +28,11 @@ gem 'bcrypt', '~> 3.1.7'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
+gem 'bulma-rails', '~> 0.8.0'
+gem 'simple_form', '~> 5.0', '>= 5.0.2'
+gem 'gravatar_image_tag', '~> 1.2'
+gem 'devise', '~> 4.7', '>= 4.7.1'
+
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
 
@@ -35,17 +40,22 @@ group :development, :test do
   gem 'sqlite3'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
+  gem 'capybara', '~> 3.32', '>= 3.32.1'
+  gem 'selenium-webdriver'
 end
 
 group :development do
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
   gem 'web-console', '>= 3.3.0'
+  gem 'better_errors', '~> 2.6'
+  gem 'guard', '~> 2.16', '>= 2.16.2'
+  gem 'guard-livereload', '~> 2.5', '>= 2.5.2', require: false
 end
 
 group :test do
   # Adds support for Capybara system testing and selenium driver
-  gem 'capybara', '>= 2.15'
-  gem 'selenium-webdriver'
+  #gem 'capybara', '>= 2.15'
+  #gem 'selenium-webdriver'
   # Easy installation and use of web drivers to run system tests with browsers
   gem 'webdrivers'
 end
