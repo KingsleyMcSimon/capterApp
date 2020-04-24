@@ -4,7 +4,8 @@ class CaptsController < ApplicationController
   # GET /capts
   # GET /capts.json
   def index
-    @capts = Capt.all
+    @capts = Capt.all.order("created_at DESC")
+     @capt = Capt.new
   end
 
   # GET /capts/1
@@ -28,7 +29,7 @@ class CaptsController < ApplicationController
 
     respond_to do |format|
       if @capt.save
-        format.html { redirect_to @capt, notice: 'Capt was successfully created.' }
+        format.html { redirect_to root_path, notice: 'Capt was successfully created.' }
         format.json { render :show, status: :created, location: @capt }
       else
         format.html { render :new }

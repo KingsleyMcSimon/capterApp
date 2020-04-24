@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
@@ -13,7 +15,10 @@ gem 'puma', '~> 4.1'
 
 gem 'rubocop'
 
-gem 'sass-rails', '>= 6'
+gem 'bootstrap-sass', '~> 3.4.1'
+gem 'sassc-rails', '>= 2.1.0'
+
+# gem 'sass-rails', '>= 6'
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
 gem 'webpacker', '~> 4.0'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
@@ -29,9 +34,9 @@ gem 'bcrypt', '~> 3.1.7'
 # gem 'image_processing', '~> 1.2'
 
 gem 'bulma-rails', '~> 0.8.0'
-gem 'simple_form', '~> 5.0', '>= 5.0.2'
-gem 'gravatar_image_tag', '~> 1.2'
 gem 'devise', '~> 4.7', '>= 4.7.1'
+gem 'gravatar_image_tag', '~> 1.2'
+gem 'simple_form', '~> 5.0', '>= 5.0.2'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
@@ -46,16 +51,16 @@ end
 
 group :development do
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
-  gem 'web-console', '>= 3.3.0'
   gem 'better_errors', '~> 2.6'
   gem 'guard', '~> 2.16', '>= 2.16.2'
   gem 'guard-livereload', '~> 2.5', '>= 2.5.2', require: false
+  gem 'web-console', '>= 3.3.0'
 end
 
 group :test do
   # Adds support for Capybara system testing and selenium driver
-  #gem 'capybara', '>= 2.15'
-  #gem 'selenium-webdriver'
+  # gem 'capybara', '>= 2.15'
+  # gem 'selenium-webdriver'
   # Easy installation and use of web drivers to run system tests with browsers
   gem 'webdrivers'
 end
