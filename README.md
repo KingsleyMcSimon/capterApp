@@ -16,7 +16,7 @@ Twitter like application called Capter!
 
 # About The Project:
 
-This project is all about building a web application that looks like the popular social media application called twitter. But i called it Capter. It has some basic functionality of the original twitter where a new user can sign up, an existing user can sign in and send a tweet or what i called a capt. A user can not see a conversation except if he or she signs in. Auser can as well edit a conversation, edit it or have it deleted.
+This project is all about building a web application that looks like the popular social media application called twitter. But i called it Capter. It has some basic functionality of the original twitter where a new user can sign up, an existing user can sign in and send a tweet or what i called a capt. A user can not see a conversation except if he or she signs in. A user can as well edit a conversation, edit it or have it deleted.
 
 # Built With:
 
