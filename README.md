@@ -38,7 +38,7 @@ Ruby On Rails, Bulma - a CSS framework.
 
 7. Install other necesary things that are needed for the project.
 
-8. Add and commit your changes.
+8. Add and commit your changes using your version control system known as git by running 'git init', then consolidate it with your consolidation system using either Github or Gitbucket, adding the remote repsitory you have created locally.
 
 # Contributing:
 
@@ -66,7 +66,7 @@ Distributed under the MIT Licence. See [Licence](https://opensource.org/licenses
 
 # What Was Learnt During The Project:
 
-I used this project to cement my knowledge of the technology(HTML5, CSS3 and JavaScript) used in building this website.
+I used this project to add to my knowledge of the Ruby On Rails web technology used in building this application.
 
 # Acknowledgements/References:
 
