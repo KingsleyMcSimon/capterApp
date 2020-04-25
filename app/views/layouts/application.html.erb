@@ -40,10 +40,10 @@
    <div class="navbar-item">
    <div class="field is-grouped">
    <p class="control">
-   <%= link_to 'New Capt', new_capt_path, class: "button is-info is-inverted" %>
+   <%= link_to 'New Capt', root_path, class: "button is-info is-inverted" %>
  </p>
 
- <%= if user_signed_in? %>
+ <% if user_signed_in? %>
  <p class="control">
  <%= link_to current_user.name, edit_user_registration_path, class: "button is-info" %>
  </p>
@@ -54,11 +54,11 @@
 
  <% else %> 
  <p class="control">
- <%= link_to "Sign In", new_user_session_path, class: "button is-info" %>
+ <%= link_to 'Sign In', new_user_session_path, class: "button is-info" %>
  </p>
 
  <p class="control">
- <%= link_to "Sign Up", new_user_registration_path, class: "button is-info" %>
+ <%= link_to 'Sign Up', new_user_registration_path, class: "button is-info" %>
  </p>
 <% end %>
    </div>
