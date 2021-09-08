@@ -83,7 +83,7 @@ end
 group :development do
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
 
-  gem 'better_errors', '~> 2.6'
+  gem 'better_errors', '~> 2.8'
 
   gem 'guard', '~> 2.16', '>= 2.16.2'
 
